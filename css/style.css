@@ -1,4 +1,9 @@
 div{
-    font-size: 200
-   px;
+    font-size: 20px;
+}
+span{
+	color: 12fff;
+}
+.logo{
+	color: rgb(250, 180, 5);
 }
