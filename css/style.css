@@ -67,6 +67,10 @@ ul li{
 }
 
 .rim{
-	font-size: 40px;
+	
+	height: 400px;
+	box-shadow: 2px 2px 10px #000;
+	margin: 30px;
+	background-color: red;
 }
 
