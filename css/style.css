@@ -33,12 +33,12 @@ ul li{
 .main{
 	width: 100%;
 	height: calc(100% - 60px);
-	background: url(../img/boy.png) 90%-100%/auto 85% no-repeat ,url(../img/фон.png) center/cover no-repeat;
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/фон.png) center/cover no-repeat;
 }
 
 .tetle__container{
 	float: left;
-	margin: 432px 0px 404px;
+	margin: 432px 0px 0px 404px;
 	color: #2c384a;
 	text-align: center;
 }
@@ -64,5 +64,12 @@ ul li{
 	font-size: 13px;
 	padding: 0px 16px;
 	margin: 58px 14px 0px 14px;
+}
+
+.rim h2{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	color: red;
 }
 
