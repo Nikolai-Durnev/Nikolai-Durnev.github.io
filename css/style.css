@@ -72,6 +72,7 @@ ul li{
 	background-color: #fcfdfd; 
 }
 
+
 .out{
 	background: url(../img/фотка.png) 859px 226px  no-repeat;
 }
@@ -110,6 +111,20 @@ ul li{
 	margin: 33px 14px 0px 886px;
 	text-align: center;
 	background: url(../img/иконка.png) 4px 5px no-repeat;
+}
+
+.roll{
+	background: url(../img/12.png)  no-repeat;
+}
+
+.vild h2{
+	font-size: 30px;
+	margin: 107px 0px 0px 873px;
+	color: #263244;
+}
+
+.command h2{
+
 }
 
 
