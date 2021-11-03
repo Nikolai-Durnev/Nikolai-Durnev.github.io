@@ -66,9 +66,53 @@ ul li{
 	margin: 58px 14px 0px 14px;
 }
 
-.rim h2{
-	font-size: 40px;
-	color: red;
-
+.light{
+	width: 100%;
+	height: 717px;
+	background-color: #fcfdfd; 
 }
+
+.out{
+	background: url(../img/фотка.png) 859px 226px  no-repeat;
+}
+
+.rim h2{
+	text-transform: uppercase;
+	font-size: 35px;
+	color: #263244;
+	padding-top: 108px;
+	text-align: center;
+}
+
+.exemple-block{
+	border: 1px solid #fcfdfd;
+	width: 731px;
+	color: #3f495a;
+	font-size: 16px;
+    margin: 270px 14px 0px 600px;
+	}
+
+.exemple-string{
+	border: 1px solid #fcfdfd;
+	width: 731px;
+	color: #3f495a;
+	font-size: 16px;
+	margin: 40px 14px 0px 600px;
+}
+
+.rim input{
+	height: 30px;
+	border: 2px solid #6d7682;
+	border-radius: 6px;
+	color: #6d7682;
+	font-size: 16px;
+	padding: 0px 14px 0px 26px;
+	margin: 33px 14px 0px 886px;
+	text-align: center;
+	background: url(../img/иконка.png) 4px 5px no-repeat;
+}
+
+
+
+
 
