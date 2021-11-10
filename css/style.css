@@ -14,6 +14,7 @@ nav{
 	line-height: 60px;
 	padding-left: 388px;
 	float: left;
+	font-family: Arial, snas-serif;
 }
 
 .menu{
@@ -22,6 +23,7 @@ nav{
 }
 
 ul li{
+	font-family: Arial, snas-serif;
 	float: left;
 	line-height: 60px;
 	color: #fff;
@@ -29,6 +31,10 @@ ul li{
 	font-size: 16px;
 	text-transform: uppercase;
 }
+
+
+
+
 
 .main{
 	width: 100%;
@@ -44,17 +50,20 @@ ul li{
 }
 
 .tetle__container h1{
+	font-family: Arial, snas-serif;
 	font-size: 60px;
 	font-weight: bold;
 }
 
 .tetle__container h4{
+	font-family: Arial, snas-serif;
 	margin-top: 40px;
 	font-size: 22px;
 	color: #79818d;
 }
 
 .tetle__container input{
+	font-family: Arial, snas-serif;
 	height: 40px;
 	text-align: center;
 	border: 2px solid #6d7682;
@@ -73,6 +82,9 @@ ul li{
 }
 
 
+
+
+
 .out{
 	background: url(../img/фотка.png) 859px 225px  no-repeat;
 }
@@ -81,8 +93,8 @@ ul li{
 	margin: 30px 0px 30px 915px;
 }
 
-
 .rim h2{
+	font-family: Arial, snas-serif;
 	text-transform: uppercase;
 	font-size: 35px;
 	color: #263244;
@@ -107,6 +119,7 @@ ul li{
 }
 
 .rim input{
+	font-family: Arial, snas-serif;
 	height: 30px;
 	border: 2px solid #6d7682;
 	border-radius: 6px;
@@ -118,86 +131,435 @@ ul li{
 	background: url(../img/иконка.png) 4px 5px no-repeat;
 }
 
+
+
+
+
 .roll{
 	background: url(../img/12.png)  no-repeat;
-	width: 100%;
 	height: 521px;
 }
 
-.roll img{
-	margin: 30px 0px 30px 935px;
-}
-
-.vild{
-	background: url(../img/ноут.png) 101px 10px no-repeat, url(../img/знак.png) 200px 30px no-repeat, url(../img/ракета.png) 0px 100px no-repeat, url(../img/граммофон.png) no-repeat;
+.vild img{
+	padding: 31px 0px 0px 910px;
 }
 
 .vild h2{
+	font-family: Arial, snas-serif;
 	text-transform: uppercase;
 	font-size: 30px;
-	padding: 108px 0px 0px 873px;
+	padding-top: 108px;
+	text-align: center;
 	color: #263244;
 }
 
-.comit h3{
+.comit{
+	font-family: Arial, snas-serif;
+	text-align: center;
+	line-height: 75px;
 	float: left ;
-    width: 700px;
+	width: 19%;
+    padding: 97px 0px 0px 360px;
+}
+
+.comit img{
+	padding-bottom: 10px;
+}
+
+.comit h3{
+	text-align: center;
+	white-space: nowrap;
 	color: #cf7600;
-	font-size: 23px;
+	font-size: 22px;
 	font-weight: 600;
-	padding: 0px 0px 0px 477px;
 }	
 
 .comit h4{
-	float: left;
-    width: 700px;
-	line-height: 40px;
+	text-align: center;
+	white-space:nowrap;
+	line-height: normal;
 	color: #3f495a;
 	font-size: 14px;
-	padding: 20px 0px 0px 350px;
+}
+
+
+
+
+
+.Fat img{
+margin: 42px 0px 0px 0px;
 }
 
 .sit img{
-margin: 50px 0px 0px 0px;
-}
-
-.sit{
-	background: url(../img/Черта заголовка.png) no-repeat;
+	padding: 30px 0px 0px 915px;
 }
 	
 .sit h2{
+	font-family: Arial, snas-serif;
 	text-transform: uppercase;
 	font-size: 35px;
 	color: #263244;
     text-align: center;
     padding-top: 110px;
-    padding-left: 75px;
+    text-align: center;
 }	
 
-
-.Mh{
+.Fat span{
 	display: block;
 	color: #3f495a;
 	font-size: 16px;
-    padding: 74px 0px 0px 580px;
+    padding: 39px 0px 0px 580px;
 }
 
-.sit h3{
+.Hat{
+	background: url(../img/фотка1.png) no-repeat;
+	background-position: 0px 43px;
+	height: 635px;
+}
+
+.Try h3{
+	height: 35px;
 	text-transform: uppercase;
-	font-size: 26px;
+	font-size: 24px;
 	color: #263244;
 	font-weight: 600;
-	padding: 10px 0px 0px 100px;
 }
 
-.Dr{
-	display: block;
-	line-height: 40px;
+.Try{
+	font-family: Arial, snas-serif;
+	height: 60px;
+	padding: 70px 0px 0px 390px;
+}
+
+.Try h4{
+	color: #243042;
+}
+
+.Try-Lor{
+	display: table-cell;
+	font-family: Arial, snas-serif;
+	height: 60px;
+	padding: 70px 0px 0px 180px;
+}
+
+.Try button{
+	color: #ffffff;
+	font-size: 15px;
+	background-color: #63b5ae;
+	width: 200px;
+	height: 44px; 
+	border-radius: 5px;
+	font-weight: 600;
+	font-family: Arial, snas-serif;
+}
+
+.Try-Lor h5{
+	height: 35px;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #263244;
+	font-weight: 600;
+}
+
+.Try-Lor h6{
+	color: #243042;
+	line-height: 18px;
+}
+
+.Jet{
+	display: table;
+}
+
+
+
+
+
+.lib{
+	padding: 250px 0px 0px 500px;
+}
+
+.lib h2{
+	color: #1c2534;
+	padding: 0px 0px 0px 313px;
+	font-size: 37px;
+	font-weight: 600;
+	font-family: Arial, snas-serif;
+}
+
+.Tab{
+	padding: 50px 0px 0px 0px;
+}
+
+.Tab h3{
+	padding-bottom: 22px;
+	color: #1c2534;
+	font-size: 23px;
+	font-weight: 600;
+    font-family: Arial, snas-serif;
+}
+
+.Tab select{
+	background-color: #eeeeee;
+    width: 891px;
+    height: 57px;
+    font-size: 14px;
+    color: #737373;
+    font-family: Arial, snas-serif;
+    padding-left: 24px;
+    outline: none;
+    border: none;
+}
+
+.Tab option{
+	outline: none;
+    border: none;
+	color: #737373;
+	padding-right: 10px;
+}
+
+.kop{
+	float: left;
+	background-color: #eeeeee;
+	width: 891px;
+	height: 3px;
+	border-radius: 2px;
+	margin-top: 15px;
+}
+
+.kop h3{
+	font-size: 17px;
+	padding-top: 20px;
+	font-family: Arial, snas-serif;
+	font-weight: 600;
+}
+
+.kot h4{
+	font-size: 20px;
+	font-weight: 600;
+	font-family: Arial, snas-serif;
+	padding-top: 26px;
+	padding-left: 880px;
+}
+
+
+
+
+
+.Nota img{
+	margin: 30px 0px 30px 915px;
+}
+
+.elit{
+	background: url(../img/Клавиши.png) no-repeat;
+	width: 100%;
+	height: 497px;
+	margin-top: 154px;
+}
+
+.Nota h2{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 104px;
+	font-family: Arial, snas-serif;
+	font-weight: 600;
+	font-size: 27px;
+	color: #263244;
+}
+
+.Bait{
+	font-family: Arial, snas-serif;
+	text-align: center;
+	line-height: 75px;
+	float: left ;
+	width: 10px;
+    padding: 35px 0px 0px 360px;
+}
+
+.Bait img{
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.Bait h3{
+	text-align: center;
+	white-space: nowrap;
+	color: #323e4f;
+	font-size: 30px;
+	font-weight: 800;
+	padding-left: 5px;
+}
+
+.Bait h4{
+	white-space:nowrap;
+	line-height: normal;
 	color: #3f495a;
-	font-size: 14px;
-	padding: auto;
+	font-size: 16px;
 }
 
 
 
 
+
+.total h2{
+	text-align: center;
+	padding-top: 110px;
+	text-transform: uppercase;
+	font-family: Arial, snas-serif;
+	font-weight: 600;
+	font-size: 27px;
+	color: #263244;
+}
+
+.total img{
+	margin: 30px 0px 30px 915px;
+}
+
+.Jop img{
+	padding: 59px 0px 0px 907px;
+}
+
+.Mot h3{
+	text-align: center;
+	padding-top: 36px;
+	color: #243042;
+	font-size: 15px;
+}
+
+.All h3{
+	font-size: 15px;
+	color: #243042;
+	padding-top: 38px;
+	text-align: center;
+}
+
+
+
+
+
+.Vik{
+	background: url(../img/Фон87.png) no-repeat;
+	width: 100%;
+	height: 810px;
+	margin-top: 152px;
+}
+
+.tipp h2{
+	text-align: center;
+	padding-top: 110px;
+	text-transform: uppercase;
+	font-family: Arial, snas-serif;
+	font-weight: 600;
+	font-size: 27px;
+	color: #ffffff;
+}
+
+.tipp img{
+	margin: 30px 0px 0px 915px;
+}
+
+.bu h3{
+	color: #ffffff;
+	text-align: center;
+	padding-top: 32px;
+}
+
+.Mop{
+	line-height: 32px;
+	color: #ffffff;
+	font-family: Arial, snas-serif;
+	text-align: center;
+	white-space: nowrap;
+	line-height: 25px;
+	float: left ;
+	width: 10px;
+    margin: 50px 0px 0px 654px;
+}
+
+.ppp{
+	line-height: 28px;
+}
+
+.Mop img{
+	padding-left: 45px;
+}
+
+.Hin{
+	line-height: 32px;
+	margin: 50px -600px 0px 220px;
+}
+
+.Koj{
+	line-height: 32px;
+	margin: 50px 0px 0px 480px;
+}
+
+.Hin img{
+	padding-left: 55px;
+}
+
+.frac{
+	padding: 230px 0px 0px 60px;
+}
+
+.frac{
+	padding-top: 155px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, snas-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.gita{
+    padding: 45px 0px 0px 595px;
+	opacity: 70%;
+}
+
+.loi{
+	padding: 0px 0px 0px 13px;
+}
+
+.jj{
+	padding-left: 13px;
+	font-size: 13px;
+	font-family: Arial, snas-serif;
+	width: 352px;
+	height: 34px;
+}
+
+.gg{
+	margin-left: 25px;
+	font-size: 13px;
+	font-family: Arial, snas-serif;
+	width: 352px;
+	height: 34px;
+}
+
+.fg{
+	font-size: 13px;
+	font-family: Arial, snas-serif;
+	display: flex;
+    width: 733px;
+	height: 93px;
+	resize: none;
+	margin: 14px 0px 0px 0px;
+	padding: 10px 0px 0px 14px;
+}
+
+.Mb{
+	background: none;
+	color: #ffffff;
+	padding-top: 15px;
+	font-size: 16px;
+}
+
+.kim{
+	font-family: Arial, snas-serif;
+	width: 126px;
+	height: 48px;
+	text-align: center;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	margin: 28px 0px 0px 897px;
+}
