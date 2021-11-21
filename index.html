@@ -17,12 +17,16 @@
 
 <script>
   window.onload = function () {
-    document.body.classList.add('loaded');
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
   }
 </script>
 
 <div class="preloader">
-  <h3>Страница загружается...</h3>
+  <h3>Страница загружается</h3>
   <div class="preloader__row">
     <div class="preloader__item"></div>
     <div class="preloader__item"></div>
