@@ -1,73 +1,38 @@
-.body{
-	font-family: Arial, snas-serif;
+
+.wrapper {
+  height: 1000px;
 }
 
-nav{
-	width: 100%;
-	height: 60px;
-	background: #344051;
+.parallax-img {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.logo{
-	color: #fff;
-	font-size: 28px;
-	line-height: 60px;
-	padding-left: 388px;
-	float: left;
+/* Other styling elements, that are not necessary for the example */
+
+body {
+  margin: 0;
+  background: #000;
 }
 
-.menu{
-	float: left;
-	padding-left: 432px;
+* {
+  font-family: Candara;
+  color: white;
 }
 
-ul li{
-	float: left;
-	line-height: 60px;
-	color: #fff;
-	margin-right: 40px;
-	font-size: 16px;
-	text-transform: uppercase;
+h1 {
+  margin: 15px;
+  text-align: center;
 }
 
-.main{
-	width: 100%;
-	height: calc(100% - 60px);
-	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/фон.png) center/cover no-repeat;
+p {
+  margin: 15px;
+  font-size: 1.1rem;
 }
 
-.tetle__container{
-	float: left;
-	margin: 432px 0px 0px 404px;
-	color: #2c384a;
-	text-align: center;
+.parallax-img {
+  background-image: url(../img/Клавиши.png);
 }
-
-.tetle__container h1{
-	font-size: 60px;
-	font-weight: bold;
-}
-
-.tetle__container h4{
-	margin-top: 40px;
-	font-size: 22px;
-	color: #79818d;
-}
-
-.tetle__container input{
-	height: 40px;
-	text-align: center;
-	border: 2px solid #6d7682;
-	background: none;
-	border-radius: 5px;
-	color: #6d7682;
-	font-size: 13px;
-	padding: 0px 16px;
-	margin: 58px 14px 0px 14px;
-}
-
-.rim h2{
-	font-size: 40px;
-	color: #777;
-}
-

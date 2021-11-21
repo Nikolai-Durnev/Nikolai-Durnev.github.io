@@ -1,3 +1,85 @@
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader h3{
+	padding-top: : 400px 0px 0px 900px;
+	color: #2e2f3b;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: Arial, snas-serif;
+	display: inline-block;
+    animation: bounce;
+    animation-duration: 2.5s;
+    animation-iteration-count: 10;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #344051;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 .body{
 	font-family: Arial, snas-serif;
 }
@@ -15,6 +97,12 @@ nav{
 	padding-left: 388px;
 	float: left;
 	font-family: Arial, snas-serif;
+	-webkit-animation: comming 2s ease;
+	-moz-animation: comming 2s ease;
+	-ms-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
+	
 }
 
 .menu{
@@ -30,7 +118,45 @@ ul li{
 	margin-right: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
+	-webkit-animation: topshift 0.4s ease forwards;
+	-moz-animation: topshift 0.4s ease forwards;
+	-ms-animation: topshift 0.4s ease forwards;
+	-o-animation: topshift 0.4s ease forwards;
+	animation: topshift 0.4s ease forwards;
+	opacity: 0;
 }
+
+ul li:nth-child(2){
+	animation-delay: 0.4s;
+}
+
+ul li:nth-child(3){
+	animation-delay: 0.8s;
+}
+
+ul li:nth-child(4){
+	animation-delay: 1.2s;
+}
+
+ul li:nth-child(5){
+	animation-delay: 1.6s;
+}
+
+ul li:nth-child(6){
+	animation-delay: 2s;
+}
+
+@keyframes topshift{
+	from{
+       opacity: 0;
+       margin-top: -83px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
 
 
 
@@ -47,6 +173,15 @@ ul li{
 	margin: 432px 0px 0px 404px;
 	color: #2c384a;
 	text-align: center;
+	opacity: 0;
+	-webkit-animation: titlemove 1s ease forwards;
+	-moz-animation: titlemove 1s ease forwards;
+	-ms-animation: titlemove 1s ease forwards;
+	-o-animation: titlemove 1s ease forwards;
+	animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s;
+	animation-delay: 2.4s;
 }
 
 .tetle__container h1{
@@ -75,15 +210,75 @@ ul li{
 	margin: 58px 14px 0px 14px;
 }
 
-.light{
+main{
 	width: 100%;
-	height: 717px;
-	background-color: #fcfdfd; 
+	height: 100%
+}
+
+.menu li a{
+	transition: all 0.2 s;
+    display: inline-block;
+}
+
+.menu li a:visited{
+	color: white;
+}
+
+.menu li a:hover{
+	color: #d17a1e;
+}
+
+.menu li a:active{
+	transform: scale(1.1);
+}
+
+.tetle__container input{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+.tetle__container input:hover{
+	background:  #344051;
+	color: white;
+
+}
+
+.tetle__container input:active{
+	transform: scale(1.1);
+}
+
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes titlemove{
+	from{
+       opacity: 0;
+       margin-left: -500px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 404px;
+	}
 }
 
 
 
 
+
+
+
+
+.light{
+	width: 100%;
+	height: 717px;
+	background-color: #fcfdfd; 
+}
 
 .out{
 	background: url(../img/фотка.png) 859px 225px  no-repeat;
@@ -91,6 +286,13 @@ ul li{
  
 .out img{
 	margin: 30px 0px 30px 915px;
+	-webkit-animation: toptap 1.5s;
+	-moz-animation: toptap 1.5s;
+	-ms-animation: toptap 1.5s;
+	-o-animation: toptap 1.5s;
+	animation: toptap 1.5s;
+	
+
 }
 
 .rim h2{
@@ -103,6 +305,7 @@ ul li{
 }
 
 .exemple-block{
+	display: inline-block;
 	border: 1px solid #fcfdfd;
 	width: 731px;
 	color: #3f495a;
@@ -110,13 +313,31 @@ ul li{
     margin: 245px 14px 0px 600px;
 	}
 
+.exemple-block{
+	-webkit-animation: jerryf 5s;
+	-moz-animation: jerryf 5s;
+	-ms-animation: jerryf 5s;
+	-o-animation: jerryf 5s;
+	animation: jerryf 5s;
+}
+
 .exemple-string{
+	display: inline-block;
 	border: 1px solid #fcfdfd;
 	width: 731px;
 	color: #3f495a;
 	font-size: 16px;
 	margin: 30px 14px 0px 600px;
 }
+
+.exemple-string{
+	-webkit-animation: jerryf 5s;
+	-moz-animation: jerryf 5s;
+	-ms-animation: jerryf 5s;
+	-o-animation: jerryf 5s;
+	animation: jerryf 5s;
+}
+
 
 .rim input{
 	font-family: Arial, snas-serif;
@@ -129,19 +350,73 @@ ul li{
 	margin: 15px 14px 0px 886px;
 	text-align: center;
 	background: url(../img/иконка.png) 4px 5px no-repeat;
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+.rim input{
+	-webkit-animation: jerryf 7s;
+	-moz-animation: jerryf 7s;
+	-ms-animation: jerryf 7s;
+	-o-animation: jerryf 7s;
+	animation: jerryf 7s;
+	
+}
+
+.rim input:hover{
+	background: #344051;
+	color: #fff;
+}
+
+.rim input:active{
+	transform: scale(1.1);
+}
+
+@keyframes jerryf{
+	from{
+       opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes toptap{
+	from{
+       opacity: 0;
+       margin-left: -1000px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 915px;
+	}
 }
 
 
 
 
 
-.roll{
-	background: url(../img/12.png)  no-repeat;
-	height: 521px;
+
+
+.parall{
+  height: 524px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parall{
+  background-image: url(../img/12.png);
 }
 
 .vild img{
-	padding: 31px 0px 0px 910px;
+	margin: 31px 0px 0px 910px;
+	-webkit-animation: jerryl 1.5s;
+	-moz-animation: jerryl 1.5s;
+	-ms-animation: jerryl 1.5s;
+	-o-animation: jerryl 1.5s;
+	animation: jerryl 1.5s;
 }
 
 .vild h2{
@@ -164,6 +439,12 @@ ul li{
 
 .comit img{
 	padding-bottom: 10px;
+	-webkit-animation: animation-ts 2s;
+	-moz-animation: animation-ts 2s;
+	-ms-animation: animation-ts 2s;
+	-o-animation: animation-ts 2s;
+	animation: animation-ts 2s;
+	
 }
 
 .comit h3{
@@ -182,19 +463,56 @@ ul li{
 	font-size: 14px;
 }
 
+@keyframes jerryl{
+	from{
+       opacity: 0;
+       margin-left: -1000px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 915px;
+	}
+}
+
+@keyframes animation-ts{
+	from{
+		opacity: 0;
+		margin-top: -50px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+.animate__animated h3{
+	animation: 2s;
+}
+
+.animate__animated h4{
+	animation: 2s;
+}
+
 
 
 
 
 .Fat img{
 margin: 42px 0px 0px 0px;
+
+
 }
 
 .sit img{
-	padding: 30px 0px 0px 915px;
+margin: 30px 0px 0px 915px;
+-webkit-animation: jerryl 1.5s;
+-moz-animation: jerryl 1.5s;
+-ms-animation: jerryl 1.5s;
+-o-animation: jerryl 1.5s;
+animation: jerryl 1.5s;
 }
 	
-.sit h2{
+.opp h2{
 	font-family: Arial, snas-serif;
 	text-transform: uppercase;
 	font-size: 35px;
@@ -204,17 +522,57 @@ margin: 42px 0px 0px 0px;
     text-align: center;
 }	
 
+@keyframes meggit{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes jerryl{
+	from{
+       opacity: 0;
+       margin-left: -1000px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 915px;
+	}
+}
+
 .Fat span{
 	display: block;
 	color: #3f495a;
 	font-size: 16px;
     padding: 39px 0px 0px 580px;
+    -webkit-animation: meggit 1.5s;
+	-moz-animation: meggit 1.5s;
+	-ms-animation: meggit 1.5s;
+	-o-animation: meggit 1.5s;
+	animation: meggit 1.5s;
 }
 
 .Hat{
 	background: url(../img/фотка1.png) no-repeat;
 	background-position: 0px 43px;
 	height: 635px;
+	-webkit-animation: ani_ii 1.5s ease forwards;
+	-moz-animation: ani_ii 1.5s ease forwards;
+	-ms-animation: ani_ii 1.5s ease forwards;
+	-o-animation: ani_ii 1.5s ease forwards;
+	animation: ani_ii 1.5s ease forwards;
+	
+}
+
+@keyframes ani_ii{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 
 .Try h3{
@@ -233,6 +591,12 @@ margin: 42px 0px 0px 0px;
 
 .Try h4{
 	color: #243042;
+	-webkit-animation: ani_hh 1.5s ease forwards;
+	-moz-animation: ani_hh 1.5s ease forwards;
+	-ms-animation: ani_hh 1.5s ease forwards;
+	-o-animation: ani_hh 1.5s ease forwards;
+	animation: ani_hh 1.5s ease forwards;
+	opacity: 0;
 }
 
 .Try-Lor{
@@ -253,6 +617,16 @@ margin: 42px 0px 0px 0px;
 	font-family: Arial, snas-serif;
 }
 
+.Try button:hover{
+	background-color: #299c92;
+	color: #fff;
+}
+
+.Try button:active{
+	transform: scale(1.1);
+}
+
+
 .Try-Lor h5{
 	height: 35px;
 	text-transform: uppercase;
@@ -264,11 +638,28 @@ margin: 42px 0px 0px 0px;
 .Try-Lor h6{
 	color: #243042;
 	line-height: 18px;
+	-webkit-animation: ani_hh 1.5s ease forwards;
+	-moz-animation: ani_hh 1.5s ease forwards;
+	-ms-animation: ani_hh 1.5s ease forwards;
+	-o-animation: ani_hh 1.5s ease forwards;
+	animation: ani_hh 1.5s ease forwards;
+	opacity: 0;
 }
 
 .Jet{
 	display: table;
 }
+
+@keyframes ani_hh{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
 
 
 
@@ -284,6 +675,37 @@ margin: 42px 0px 0px 0px;
 	font-size: 37px;
 	font-weight: 600;
 	font-family: Arial, snas-serif;
+	-webkit-animation: ani_dd 1s ease forwards;
+	-moz-animation: ani_dd 1s ease forwards;
+	-ms-animation: ani_dd 1s ease forwards;
+	-o-animation: ani_dd 1s ease forwards;
+	animation: ani_dd 1s ease forwards;
+}
+
+@keyframes ani_dd{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.clop{
+	-webkit-animation: ani_rr 1s ease forwards;
+	-moz-animation: ani_rr 1s ease forwards;
+	-ms-animation: ani_rr 1s ease forwards; 
+	-o-animation: ani_rr 1s ease forwards;
+	animation: ani_rr 1s ease forwards;
+}
+
+@keyframes ani_rr{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 
 .Tab{
@@ -323,7 +745,7 @@ margin: 42px 0px 0px 0px;
 	width: 891px;
 	height: 3px;
 	border-radius: 2px;
-	margin-top: 15px;
+	margin-top: 38px;
 }
 
 .kop h3{
@@ -334,26 +756,60 @@ margin: 42px 0px 0px 0px;
 }
 
 .kot h4{
+	position: relative;
+	top:0;
+	left:0;
 	font-size: 20px;
 	font-weight: 600;
 	font-family: Arial, snas-serif;
-	padding-top: 26px;
-	padding-left: 880px;
+	margin-top: 60px;
+	margin-left: 880px;
 }
 
 
 
 
+
+
+
+.elit{
+	height: 500px;
+}
+
+.parallax-img{
+	margin-top: 155px;
+}
+
+.parallax-img {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-img {
+  background-image: url(../img/Клавиши.png);
+}
 
 .Nota img{
 	margin: 30px 0px 30px 915px;
+	-webkit-animation: jerryl 1.5s;
+-moz-animation: jerryl 1.5s;
+-ms-animation: jerryl 1.5s;
+-o-animation: jerryl 1.5s;
+animation: jerryl 1.5s;
 }
 
-.elit{
-	background: url(../img/Клавиши.png) no-repeat;
-	width: 100%;
-	height: 497px;
-	margin-top: 154px;
+@keyframes jerryl{
+	from{
+       opacity: 0;
+       margin-left: -1000px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 915px;
+	}
 }
 
 .Nota h2{
@@ -373,6 +829,21 @@ margin: 42px 0px 0px 0px;
 	float: left ;
 	width: 10px;
     padding: 35px 0px 0px 360px;
+    -webkit-animation: ani_cc 2s;
+    -moz-animation: ani_cc 2s;
+    -ms-animation: ani_cc 2s;
+    -o-animation: ani_cc 2s;
+    animation: ani_cc 2s;
+    
+}
+
+@keyframes ani_cc{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 
 .Bait img{
@@ -412,6 +883,23 @@ margin: 42px 0px 0px 0px;
 
 .total img{
 	margin: 30px 0px 30px 915px;
+	-webkit-animation: jerryl 1.5s;
+	-moz-animation: jerryl 1.5s;
+	-ms-animation: jerryl 1.5s;
+	-o-animation: jerryl 1.5s;
+	animation: jerryl 1.5s;
+	
+}
+
+@keyframes jerryl{
+	from{
+       opacity: 0;
+       margin-left: -1000px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 915px;
+	}
 }
 
 .Jop img{
@@ -423,6 +911,11 @@ margin: 42px 0px 0px 0px;
 	padding-top: 36px;
 	color: #243042;
 	font-size: 15px;
+	-webkit-animation: ani_zz 2s;
+	-moz-animation: ani_zz 2s;
+	-ms-animation: ani_zz 2s;
+	-o-animation: ani_zz 2s;
+	animation: ani_zz 2s;
 }
 
 .All h3{
@@ -430,6 +923,21 @@ margin: 42px 0px 0px 0px;
 	color: #243042;
 	padding-top: 38px;
 	text-align: center;
+	-webkit-animation: ani_zz 2s;
+	-moz-animation: ani_zz 2s;
+	-ms-animation: ani_zz 2s;
+	-o-animation: ani_zz 2s;
+	animation: ani_zz 2s;
+	
+}
+
+@keyframes ani_zz{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 
 
@@ -455,6 +963,39 @@ margin: 42px 0px 0px 0px;
 
 .tipp img{
 	margin: 30px 0px 0px 915px;
+	-webkit-animation: jerryl 1.5s;
+	-moz-animation: jerryl 1.5s;
+	-ms-animation: jerryl 1.5s;
+	-o-animation: jerryl 1.5s;
+	animation: jerryl 1.5s;
+}
+
+@keyframes jerryl{
+	from{
+       opacity: 0;
+       margin-left: -1000px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 915px;
+	}
+}
+
+.zxc{
+	-webkit-animation: ani_aa 1.7s;
+	-moz-animation: ani_aa 1.7s;
+	-ms-animation: ani_aa 1.7s;
+	-o-animation: ani_aa 1.7s;
+	animation: ani_aa 1.7s;
+}
+
+@keyframes ani_aa{
+	from{
+       opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 
 .bu h3{
@@ -550,16 +1091,26 @@ margin: 42px 0px 0px 0px;
 .Mb{
 	background: none;
 	color: #ffffff;
-	padding-top: 15px;
 	font-size: 16px;
 }
 
-.kim{
+.Mb{
 	font-family: Arial, snas-serif;
 	width: 126px;
 	height: 48px;
 	text-align: center;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
-	margin: 28px 0px 0px 897px;
+	margin: 28px 0px 0px 302px;
+	transition: all 0.2s;
+	transform: scale(1);
 }
+
+.Mb:hover{
+    color: #ffffff;
+}
+
+.Mb:active{
+	transform: scale(1.1);
+}
+

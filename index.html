@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		        <meta charset="UTF-8">
-		<meta name="description" content="Это моя первая страница ...">
+		  <meta charset="UTF-8">
+		  <meta name="description" content="Это моя первая страница ...">
 	    <meta name="author" content="Nikolai">
 	    <meta name="robots" content="index/noindex/", follow/nofollow, all>
 	    <meta property="og:title" content="Это мой контент">		
@@ -10,41 +10,59 @@
 	<title>Николай Дурнев - сайт</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
 
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded');
+  }
+</script>
+
+<div class="preloader">
+  <h3>Страница загружается...</h3>
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
 <header>
 	<nav>
 		<div class="logo">Андрей Браун</div>
 		<div class="menu"><ul>
-			<li>Обо мне</li>
-			<li>Услуги</li>
-			<li>Кейсы</li>
-			<li>Прайс</li>
-			<li>Отзывы</li>
-			<li>Контакты</li>
+			<li><a href="">Обо мне</a></li>
+			<li><a href="">Услуги</a></li>
+			<li><a href="">Кейсы</a></li>
+			<li><a href="">Прайс</a></li>
+			<li><a href="">Отзывы</a></li>
+			<li><a href="">Контакты</a></li>
 
 		</ul></div>
 	</nav>
 </header>
 
-<div class="main"><div class="tetle__container">
-	<h1>Привет <br> Я Андрей Браун </h1>
-	<h4> Фулл стек веб-разработчик </h4>
-	<input type="submit" value="Обо мне">
-	<input type="submit" value="Мои работы">
+<main>
+ <section class="main"> 
+  <div class="tetle__container">
+	  <h1>Привет <br> Я Андрей Браун </h1>
+	  <h4> Фулл стек веб-разработчик </h4>
+	  <input type="button" value="Обо мне">
+	  <input type="button" value="Мои работы">
   </div>
-  </div>
-
+ </section>
+</main>
 
 
 
 <div class="light"> <div class="out"> <div class="rim">
-<h2><b>Обо мне</b></h2>
+<h2 class="animate__animated animate__fadeInDown"><b>Обо мне</b></h2>
 <img src="img/Черта заголовка.png" alt="">
+<div class="jerryf">
 <div class="exemple-block">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloribus, veritatis maiores quaerat nesciunt corporis, cupiditate, unde velit molestias illo odit mollitia vitae soluta, aspernatur hic voluptatum?</div>
 <div class="exemple-string">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde corporis quos officiis consectetur ducimus cumque molestiae, amet nemo eum tempore cum quibusdam reprehenderit culpa voluptas asperiores?</div>
+</div>
 <input type="submit" value="Скачать резюме">
 
 </div>
@@ -53,42 +71,43 @@
 
 
 
-
+<div class="parall">
 <div class="roll"><div class="vild">
-<h2><b>Что я умею</b></h2>
+<h2 class="animate__animated animate__fadeInDown"><b>Что я умею</b></h2>
 <img src="img/Черта заголовка.png" alt=""></div>
-
 
 <div class="comit">
 <img src="img/ноут.png" alt="">
-<h3>Веб-дизайн</h3>
-<h4>Lorem ipsum dolor sit amet consectetur adipisicing<p> elit. Dolorem ipsam odit nobis</p> placeat incidunt, voluptatibus.</h4>
+<h3 class="animate__animated animate__fadeIn">Веб-дизайн</h3>
+<h4 class="animate__animated animate__fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing<p> elit. Dolorem ipsam odit nobis</p> placeat incidunt, voluptatibus.</h4>
 </div>
 
 <div class="comit">
 <img src="img/знак.png" alt="">
-<h3>Разработка</h3>
-<h4>Lorem ipsum dolor sit amet, consectetur adipisicing,<p> elit. Et maiores adipisci voluptatem</p> molestiae earum! Illum.</h4>   
+<h3 class="animate__animated animate__fadeIn">Разработка</h3>
+<h4 class="animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing,<p> elit. Et maiores adipisci voluptatem</p> molestiae earum! Illum.</h4>   
 </div>
 
 <div class="comit">
 <img src="img/ракета.png" alt="">
-<h3>CEO-оптимизация</h3>
-<h4>Lorem, ipsum dolor sit amet consectetur adipisicing<p> elit. Neque, doloremque est et.</p> Praesentium minus, nulla?</h4>
+<h3 class="animate__animated animate__fadeIn">CEO-оптимизация</h3>
+<h4 class="animate__animated animate__fadeIn">Lorem, ipsum dolor sit amet consectetur adipisicing<p> elit. Neque, doloremque est et.</p> Praesentium minus, nulla?</h4>
 </div>
 
 <div class="comit">
 <img src="img/граммофон.png" alt="">
-<h3>Маркетинг</h3>
-<h4>Lorem ipsum dolor sit amet, consectetur, adipisicing<p> elit. Inventore eligendi, possimus repellat</p> nobis saepe vero.</h4>
+<h3 class="animate__animated animate__fadeIn">Маркетинг</h3>
+<h4 class="animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur, adipisicing<p> elit. Inventore eligendi, possimus repellat</p> nobis saepe vero.</h4>
 </div>
 </div>
+</div>
 
 
 
-<div class="opp"> <div class="sit">
-<h2><b>Кейсы</b></h2>
-<img src="img/Черта заголовка.png" alt="">
+<div class="opp"> 
+<h2 class="animate__animated animate__fadeInDown"><b>Кейсы</b></h2>
+<div class="sit">
+  <img src="img/Черта заголовка.png" alt="">
 </div>
 <div class="Fat">
 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat possimus molestiae ipsa exercitationem, quis itaque.</span>
@@ -98,12 +117,12 @@
 
 <div class="Jet">
 <div class="Try">
-<h3>Client:</h3>
+<h3 class="animate__animated animate__fadeInUp">Client:</h3>
 <h4>Какая-то компания</h4>
 </div>
 
 <div class="Try">
-<h3>Website:</h3>
+<h3 class="animate__animated animate__fadeInUp">Website:</h3>
 <h4>http://www.somedomain.com</h4>
 </div>
 
@@ -114,7 +133,7 @@
 </div>
 
   <div class="Try-Lor">
-  <h5>Название проекта</h5>
+  <h5 class="animate__animated animate__fadeInDown">Название проекта</h5>
   <h6>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Sapiente debitis fuga nostrum soluta beatae<p> dolorum recusandae totam quasi dolorem inventore, consequatur quam saepe enim, cumque tempora nobis illo sint libero.</p> Facere nesciunt alias sed nostrum, voluptatum sapiente nam tempora nulla assumenda molestiae doloremque minus debitis, magnam<p> rerum eveniet iure culpa reprehenderit et libero beatae animi dolor iste aliquid tenetur?</p> Eaque earum quibusdam ipsam corporis? Nam commodi accusamus eum obcaecati adipisci!</h6></div>
 </div>
 </div>
@@ -127,6 +146,7 @@
   <h2><b>Расчет стоимости</b></h2>
 
 <div class="Tab">
+<div class="clop">
 <h3>Тип сайта</h3>
 <select name="user_2" required="required">
   <option value="Pl">Выберите пункт...</option>
@@ -137,7 +157,9 @@
   <option value="5">5</option>
   <option value="6">6</option>
 </select>
+</div>
 
+<div class="clop">
 <h3><br>Дизайн</h3>
 <select name="user_2" required="required">
   <option value="0">Выберите пункт...</option>
@@ -148,7 +170,9 @@
   <option value="5">5</option>
   <option value="6">6</option>
 </select>
+</div>
 
+<div class="clop">
 <h3><br>Адаптивность</h3>
 <select name="user_2" required="required">
   <option value="0">Выберите пункт...</option>
@@ -159,6 +183,7 @@
   <option value="5">5</option>
   <option value="6">6</option>
 </select>
+</div>
 </div>
 
 <div class="kop">
@@ -173,40 +198,51 @@
 
 
 
-<div class="elit"><div class="Nota">
-<h2><b>Немного статистики</b></h2>
-<img src="img/Черта заголовка.png" alt=""></div>
 
+
+
+
+
+<div class="parallax-img">
+<div class="elit"><div class="Nota">
+<h2 class="animate__animated animate__fadeInDown"><b>Немного статистики</b></h2>
+<img src="img/Черта заголовка.png" alt=""></div>
 <div class="Bait">
-<img src="img/смайл.png" alt="">  
+<img class="animate__animated animate__heartBeat" src="img/смайл.png" alt="">  
 <h3>120</h3>
 <h4>Счастливых клиентов</h4>
 </div>
 
 <div class="Bait">
-<img src="img/скобки.png" alt="">
+<img class="animate__animated animate__heartBeat" src="img/скобки.png" alt="">
 <h3>4,600</h3>
 <h4>Часов работы</h4>
 </div>
 
 <div class="Bait">
-<img src="img/галочка.png" alt="">
+<img class="animate__animated animate__heartBeat" src="img/галочка.png" alt="">
 <h3>340</h3>
 <h4>Проектов завершено</h4>
 </div>
 
 <div class="Bait">
-<img src="img/кубок.png" alt="">  
+<img class="animate__animated animate__heartBeat" src="img/кубок.png" alt="">  
 <h3>23</h3>
 <h4>Наград получено</h4>
 </div>
 </div>
+</div>
+
+
+
+
+
 
 
 
 
 <div class="Mag"><div class="total">
-<h2><b>Отзывы</b></h2>  
+<h2 class="animate__animated animate__fadeInDown"><b>Отзывы</b></h2>  
 <img src="img/Черта заголовка.png" alt=""></div>
 
 <div class="Jop"><img src="img/фотка77.png" alt=""></div>
@@ -223,9 +259,10 @@
 
 
 <div class="Vik"><div class="tipp">
-<h2><b>Мои контакты</b></h2>
+<h2 class="animate__animated animate__fadeInDown"><b>Мои контакты</b></h2>
 <img src="img/Черта заголовка.png" alt=""></div>
 
+<div class="zxc">
 <div class="bu">
 <h3>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ut, mollitia. Culpa, consectetur! Corrupti.</h3>
 </div>
@@ -247,20 +284,17 @@
 <div class="frac">
 <h2>Оставьте мне сообщение</h2>
 </div>
+</div>
 
 <div class="gita">
+<form id="form_email" action="#">
 <input class="loi jj" type="text" name="text_input" placeholder="Имя">
-<input class="loi gg" type="text" name="text_input" placeholder="Email">
-<textarea class="loi fg" name="name1" placeholder="Сообщение">
-</textarea>
-</div>
-
-<div class="kim">
+<input class="loi gg" type="text" name="text_input" placeholder="Email" form="form_email" pattern="[A-Z][a-z]-[0-9]">
+<textarea class="loi fg" name="name1" placeholder="Сообщение"></textarea>
 <input class="Mb" type="reset" value="Отправить">
+</form>
 </div>
-
 </div>
-
 
 
 
